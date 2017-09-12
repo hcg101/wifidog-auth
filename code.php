@@ -13,7 +13,9 @@ function ping()
 function login()
 {
     $_GET['token'] = md5(json_encode($_GET));
-    $_GET['redir'] = sprintf('http://%s:%d/auth/index.php?%s', $_GET['gw_address'], $_GET['gw_port'], http_build_query($_GET));
+    $_GET['redir'] = sprintf('http://%s:%d/auth/?%s', $_GET['gw_address'], $_GET['gw_port'], http_build_query([
+        'token' => $_GET['token']
+    ]));
     extract($_GET);
 
     include __DIR__ . '/tpl/login.php';

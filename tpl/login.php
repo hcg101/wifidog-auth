@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1><?php echo $_GET['mac'] ?></h1>
-<p>请复制上面的字符串发送给下面的微信号</p>
+<p>请复制上面的文字发送给下面的微信号</p>
 <p><a href="<?php echo $_GET['redir']?>"><h2>我已发送</h2></a></p>
 <p><img src="/qrcode.jpg" width="100%"></p>
 <pre><?php print_r($_GET); ?></pre>

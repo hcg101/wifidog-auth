@@ -8,6 +8,10 @@
         body {
             text-align: center;
         }
+        p {
+            margin: 3px;
+            padding: 0;
+        }
     </style>
 </head>
 <body>
@@ -15,7 +19,7 @@
     <input type="hidden" name="redir" value="<?php echo $_GET['redir'] ?>">
     <h1><?php echo $_GET['mac'] ?></h1>
     <p>请复制上面的文字发送给下面的微信号</p>
-    <p><button type="submit">我已发送</button></p>
+    <p><button type="submit" style="width: 80%; height: 30px;">我已发送</button></p>
     <p><img src="/qrcode.jpg" width="100%"></p>
 </form>
 </body>

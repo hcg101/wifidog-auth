@@ -18,6 +18,5 @@
     <p><button type="submit">我已发送</button></p>
     <p><img src="/qrcode.jpg" width="100%"></p>
 </form>
-<pre><?php print_r($_GET); ?></pre>
 </body>
 </html>

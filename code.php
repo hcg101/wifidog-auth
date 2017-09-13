@@ -34,6 +34,8 @@ function portal()
 {
     extract($_GET);
 
+    $redir = 'http://www.baidu.com/';
+
     include __DIR__ . '/tpl/portal.php';
 }
 

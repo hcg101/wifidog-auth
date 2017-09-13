@@ -35,7 +35,7 @@ function portal()
 {
     extract($_GET);
 
-    $redir = 'http://www.baidu.com/';
+    $redir = 'https://www.google.com.hk/';
 
     include __DIR__ . '/tpl/portal.php';
 }

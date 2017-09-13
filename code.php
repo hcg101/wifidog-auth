@@ -12,12 +12,15 @@ function ping()
  */
 function login()
 {
+    if (isset($_GET['redir']) && $_GET['redir']) {
+        header('Location: ' . $_GET['redir']);
+        return;
+    }
     $_GET['token'] = md5(json_encode($_GET));
     $_GET['redir'] = sprintf('http://%s:%d/wifidog/auth?%s', $_GET['gw_address'], $_GET['gw_port'], http_build_query([
         'token' => $_GET['token']
     ]));
-    header('Location:' . $_GET['redir']);
-    return ;
+
     extract($_GET);
 
     include __DIR__ . '/tpl/login.php';

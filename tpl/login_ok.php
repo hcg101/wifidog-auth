@@ -12,7 +12,6 @@
     </script>
 </head>
 <body>
-<h1>跳转中...</h1><br>
-<a href="<?php echo $redir ?>"><?php echo $redir ?></a>
+<h1>授权中，请稍后...</h1>
 </body>
 </html>

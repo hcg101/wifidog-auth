@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-<form action="/login" method="get">
+<form action="/login" method="post">
     <input type="hidden" name="redir" value="<?php echo $_GET['redir'] ?>">
     <h1><?php echo $_GET['mac'] ?></h1>
     <p>请复制上面的文字发送给下面的微信号</p>

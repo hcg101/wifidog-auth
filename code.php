@@ -12,8 +12,8 @@ function ping()
  */
 function login()
 {
-    if (isset($_GET['redir']) && $_GET['redir']) {
-        header('Location: ' . $_GET['redir']);
+    if (isset($_POST['redir']) && $_POST['redir']) {
+        header('Location: ' . $_POST['redir']);
         return;
     }
     $_GET['token'] = md5(json_encode($_GET));

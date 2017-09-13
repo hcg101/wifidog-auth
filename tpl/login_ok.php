@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta http-equiv="refresh" content="0;url=<?php echo $redir?>">
+    <meta http-equiv="refresh" content="3;url=<?php echo $redir?>">
     <title>WIFI Login Success</title>
     <style>
         body {
@@ -11,7 +11,9 @@
         }
     </style>
     <script>
-        window.location.replace('<?php echo $redir?>');
+        window.setTimeout(function () {
+            window.location.replace('<?php echo $redir?>');
+        },3000);
     </script>
 </head>
 <body>

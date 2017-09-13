@@ -14,7 +14,6 @@ function login()
 {
     if (isset($_POST['redir']) && $_POST['redir']) {
         extract($_POST);
-        header('Location: ' . $_POST['redir']);
         include __DIR__ . '/tpl/login_ok.php';
         return;
     }

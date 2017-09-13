@@ -17,9 +17,8 @@
 <body>
 <form action="/login" method="post">
     <input type="hidden" name="redir" value="<?php echo $_GET['redir'] ?>">
-    <input type="hidden" name="mac" value="<?php echo $_GET['mac'] ?>">
     <input type="hidden" name="token" value="<?php echo $_GET['token'] ?>">
-    <h1><?php echo $_GET['mac'] ?></h1>
+    <input type="text" name="mac" style="text-align: center; border: none;font-size: x-large; font-weight: bold" value="<?php echo $_GET['mac'] ?>">
     <p>请复制上面的文字发送给下面的微信号</p>
     <p><button type="submit" style="width: 80%; height: 50px; font-size: larger; font-weight: bold">我已发送</button></p>
     <p><img src="/qrcode.jpg" width="100%"></p>

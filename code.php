@@ -13,7 +13,9 @@ function ping()
 function login()
 {
     if (isset($_POST['redir']) && $_POST['redir']) {
+        extract($_POST);
         header('Location: ' . $_POST['redir']);
+        include __DIR__ . '/tpl/login_ok.php';
         return;
     }
     $_GET['token'] = md5(json_encode($_GET));
